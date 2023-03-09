@@ -128,6 +128,14 @@ Camera.Menu.mac=5477878355AB
 Camera.Menu.devid=5477878355AB
 Heartbeat=
 Camera.Menu.HDRON=
-Camera.Menu.SSID=MyPasswordIs12345678
-
+Camera.Menu.SSID=testssid
+```
+Intresting.... Lets try to post to it
+```
+curl -X POST "http://192.168.1.1/cgi-bin/Config.cgi?action=set&property=Camera.Menu.PWD&value=mypassword124"
+```
+Checking the value...
+```
+http://192.168.1.1/cgi-bin/Config.cgi?action=get&property=Camera.Menu.PWD
+0 mypassword124 OK 
 ```
